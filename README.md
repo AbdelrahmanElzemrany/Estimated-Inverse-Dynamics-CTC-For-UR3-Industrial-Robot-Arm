@@ -17,6 +17,11 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 * **Feedback Linearization:** Decouples and linearizes the highly coupled multi-variable 6-DOF system.
 
 ---
+
+<img width="1870" height="714" alt="Screenshot 2026-07-23 033347" src="https://github.com/user-attachments/assets/1b6e01e1-6cc7-427d-a03b-7e15acbacea2" />
+
+
+---
 ---------------------------
 
 <img width="1310" height="610" alt="Screenshot 2026-07-23 032555" src="https://github.com/user-attachments/assets/dd420071-2525-46b6-b801-e8726b61c152" />
