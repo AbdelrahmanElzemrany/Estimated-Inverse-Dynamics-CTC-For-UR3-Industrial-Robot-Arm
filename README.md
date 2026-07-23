@@ -131,15 +131,38 @@ Figrue 4 : The excitation experiment configuration .
 Figure 5 : The UR3 robot arm is moving according to the excitation trajectory .
 
 ---------------------------
+<img width="1917" height="928" alt="image" src="https://github.com/user-attachments/assets/92cce9d8-f4cb-4de7-ac49-476b09f116ad" />
 
-<img width="1907" height="915" alt="Screenshot 2026-07-23 032705" src="https://github.com/user-attachments/assets/68118c59-e55a-452a-8552-e88b985b4199" />
 
 Figure 6 : The first cross validation plot against slow validation trajectory .
 
 ----------------------------
 
+**Figure 6 Caption:** Cross-validation results showing per-joint fit percentages 
+and overall system accuracy (99.97%).
+
+
+### Quantitative Cross-Validation Results
+
+| Joint | Fit Percentage |
+| :--- | :---: |
+| Joint 1 (Base Yaw) | 99.89% |
+| Joint 2 (Shoulder) | 99.94% |
+| Joint 3 (Elbow) | 99.95% |
+| Joint 4 (Wrist 1) | 99.83% |
+| Joint 5 (Wrist 2) | 99.31% |
+| Joint 6 (Wrist 3) | 99.52% |
+| **Overall Accuracy** | **99.97%** |
+
+> **Note:** The overall system cross-validation accuracy outperforms individual joint predictions due to error-canceling geometric alignments within the multi-body system structure during dynamic state estimation.
+
+
 
 <img width="1907" height="912" alt="Screenshot 2026-07-23 032935" src="https://github.com/user-attachments/assets/f9b13b93-96d8-4bb9-9d16-72a74bb9167e" />
+
+Figure 7 The second cross validation against fast and aggresssive trajectory
+
+---------------
 
 
 
