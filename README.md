@@ -14,13 +14,28 @@ Model-free control strategies (like independent joint PD loops) experience high 
 
 This repository provides a step-by-step pipeline to handle the entire control loop lifecycle: from trajectory excitation and physical parameter estimation to closed-loop validation and computed torque implementation.
 
-### Key Features
-* **Trajectory Optimization:** Excitation trajectories designed to maximize parameter visibility.
-* **Physical Consistency:** Parameter estimation constraints that eliminate physically impossible variables (e.g., negative mass or inertia).
-* **Friction Identification:** Integrates Coulomb and viscous friction models into the joint dynamics.
-* **Feedback Linearization:** Decouples and linearizes the highly coupled multi-variable 6-DOF system.
+## 🧠 System Identification & Grey-Box Modeling
 
----
+The dynamic parameters of the UR3 industrial robot are identified using an experimental grey-box parameter estimation approach. 
+
+### The Estimation Philosophy
+1. **Geometric Priors Only:** It is assumed that only the kinematic structure—defined by the **Modified Denavit-Hartenberg (MDH)** convention—is known.
+2. **Hidden Plant Parameters:** The true physical properties (mass $m_i$, center of mass $P_{c_i}$, inertia tensors $I_i$, and joint friction coefficients $F_v, F_c$) are treated as completely unknown.
+3. **Simscape Data Collection:** The high-fidelity Simscape Multibody model serves as the physical experimental plant. By executing optimized, highly exciting trajectories on the Simscape model, we log joint position, velocity, acceleration (PVA), and torque profiles ($\tau$).
+4. **Constrained Least Squares Optimization:** The collected data is fed into a symbolic regressor model matrix $Y(q, \dot{q}, \ddot{q})$ to reconstruct and estimate a physically consistent set of parameters, ensuring that the estimated inertia tensors remain positive-definite and mass values stay positive.
+
+> [!TIP]
+> ### 💡 Note on Base Parameter Identification
+> In robotic parameter estimation, not all inertial parameters can be isolated independently due to linear dependencies in the regressor matrix (caused by the physical trajectory limitations and joint constraints). 
+> 
+> To resolve this, this project utilizes **Base Parameter Identification**. We compute the **minimal set of parameters** (linear combinations of the original link inertias, masses, and offsets) to eliminate unobservable parameters and guarantee a full-rank regressor matrix. Only this identifiable minimal set is estimated to ensure numerical stability and flawless tracking performance in the Computed Torque Controller (CTC).
+
+### ✅ Model Validation Technique
+To guarantee that the identified base parameters are correct, robust, and free from overfitting, the estimated model is validated using a cross-validation technique:
+* **Distinct Trajectories:** The plant is subjected to **two entirely different validation trajectories** that were never seen during the parameter excitation phase.
+* **Torque Tracking Residuals:** The actual joint torques logged from the Simscape plant are directly compared against the predicted torques computed by the estimated parameter matrix.
+* **Accuracy Confirmation:** A low residual error across both independent test sets mathematically verifies that the identified minimal parameter set accurately captures the true structural dynamics of the physical arm under any motion profile.
+
 
 ### Denavit-Hartenberg (DH) Parameters (Modified)
 
