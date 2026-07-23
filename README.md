@@ -80,6 +80,11 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 
 --------------
 
+<img width="1280" height="704" alt="Step_10_UR3_CTC_SF-ezgif com-video-to-gif-converter (1)" src="https://github.com/user-attachments/assets/b0306cd7-b487-4f8a-a17d-0c44d246d0d9" />
+
+
+---------------
+
 
 ## 🛠 File Architecture & Workflow Pipeline
 
