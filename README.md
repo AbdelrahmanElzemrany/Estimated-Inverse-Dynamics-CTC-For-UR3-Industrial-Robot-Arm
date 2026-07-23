@@ -41,6 +41,23 @@ Once the identified base parameters successfully pass the cross-validation tests
 * **Matrix Reformulation:** The validated minimal parameter set is used to reconstruct the high-fidelity estimated inverse dynamics matrices: the Mass/Inertia matrix $\hat{M}(q)$, the Coriolis/Centrifugal matrix $\hat{C}(q, \dot{q})$, and the Gravity vector $\hat{G}(q)$.
 * **Model-Based CTC Design:** These reconstructed matrices act as the core mathematical engine for the model-based **Computed Torque Controller (CTC)**. By executing feedback linearization in real-time, the controller cancels out the non-linear multibody dynamics, leaving decoupled linear joint loops that achieve exceptional path-tracking accuracy.
 
+* ## 📐 Mathematical Framework
+
+The controller calculates real-time actuator torques ($\tau$) by balancing the identified inertial, centrifugal, gravitational, and frictional properties:
+
+$$\tau = M(q)\left[\ddot{q}_d + K_p e + K_d \dot{e}\right] + C(q, \dot{q})\dot{q} + G(q) + F(\dot{q})$$
+
+<img width="1558" height="724" alt="Screenshot 2026-07-23 030937" src="https://github.com/user-attachments/assets/17d2c9c7-2369-4d90-be4d-6a26b23b0a1a" />
+
+
+Where:
+* $M(q)$ is the identified bounded Mass/Inertia matrix.
+* $C(q, \dot{q})$ captures Coriolis and centrifugal effects.
+* $G(q)$ handles real-time gravity cancellation.
+* $F(\dot{q})$ compensates for Coulomb and viscous friction.
+
+---
+
 > [!NOTE]
 > ### 🔩 Friction Integration into the Coriolis Matrix
 > For structural and implementation elegance within the real-time control loop, the estimated joint friction models ($F_v$ and $F_c$) are mathematically grouped and embedded directly into the **Coriolis/Centrifugal matrix** $\hat{C}(q, \dot{q})$. This consolidates all velocity-dependent dynamic losses into a unified matrix expression, optimizing real-time calculation efficiency in the controller.
@@ -197,22 +214,7 @@ To run this project successfully, execute the scripts and Simulink files in the 
 
 ---
 
-## 📐 Mathematical Framework
 
-The controller calculates real-time actuator torques ($\tau$) by balancing the identified inertial, centrifugal, gravitational, and frictional properties:
-
-$$\tau = M(q)\left[\ddot{q}_d + K_p e + K_d \dot{e}\right] + C(q, \dot{q})\dot{q} + G(q) + F(\dot{q})$$
-
-<img width="1558" height="724" alt="Screenshot 2026-07-23 030937" src="https://github.com/user-attachments/assets/17d2c9c7-2369-4d90-be4d-6a26b23b0a1a" />
-
-
-Where:
-* $M(q)$ is the identified bounded Mass/Inertia matrix.
-* $C(q, \dot{q})$ captures Coriolis and centrifugal effects.
-* $G(q)$ handles real-time gravity cancellation.
-* $F(\dot{q})$ compensates for Coulomb and viscous friction.
-
----
 
 ## 💻 Requirements & Setup
 
