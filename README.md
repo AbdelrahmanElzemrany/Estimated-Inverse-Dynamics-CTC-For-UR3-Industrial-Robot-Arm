@@ -17,7 +17,14 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 * **Feedback Linearization:** Decouples and linearizes the highly coupled multi-variable 6-DOF system.
 
 ---
+---------------------------
 
+
+<img width="1280" height="704" alt="Step_3_UR3_Excitation-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/5c831a5e-3d07-4cc3-821f-abdc7c86dcf0" />
+
+
+
+---------------------------
 ## 🛠 File Architecture & Workflow Pipeline
 
 To run this project successfully, execute the scripts and Simulink files in the following sequential order:
