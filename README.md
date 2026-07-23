@@ -141,7 +141,7 @@ Figure 6 : The first cross validation plot against slow validation trajectory .
 
 <img width="1907" height="912" alt="Screenshot 2026-07-23 032935" src="https://github.com/user-attachments/assets/f9b13b93-96d8-4bb9-9d16-72a74bb9167e" />
 
-<img width="..." height="..." alt="Validation Results" src="[screenshot]" />
+
 
 **Figure 7 Caption:** Cross-validation results showing per-joint fit percentages 
 and overall system accuracy (99.89%).
