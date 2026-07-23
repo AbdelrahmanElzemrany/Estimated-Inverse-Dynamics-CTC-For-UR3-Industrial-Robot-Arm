@@ -228,6 +228,19 @@ Figure 13 : The tracking error across all the joints remains low
 
 
 
+<img width="1280" height="704" alt="Step_10_UR3_CTC_SF-ezgif com-video-to-gif-converter (2)" src="https://github.com/user-attachments/assets/757413ea-0d10-48bb-86b3-908fdea7926c" />
+Figure 14 : Testing the performance of the wrist joints
+
+
+
+----------------------------------------------
+
+<img width="1535" height="900" alt="image" src="https://github.com/user-attachments/assets/ba6e63d9-6d92-492c-94cf-796b4e678b7e" />
+
+Figure 15 : The tracking error across the joints remains low but it also show why the sixith joint got the least validation percentage 
+
+
+
 
 
 ## 🛠 File Architecture & Workflow Pipeline
