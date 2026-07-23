@@ -31,6 +31,17 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 
 
 ---------------------------
+
+<img width="1907" height="915" alt="Screenshot 2026-07-23 032705" src="https://github.com/user-attachments/assets/68118c59-e55a-452a-8552-e88b985b4199" />
+
+
+----------------------------
+
+
+<img width="1907" height="912" alt="Screenshot 2026-07-23 032935" src="https://github.com/user-attachments/assets/f9b13b93-96d8-4bb9-9d16-72a74bb9167e" />
+
+
+---------------------------
 ## 🛠 File Architecture & Workflow Pipeline
 
 To run this project successfully, execute the scripts and Simulink files in the following sequential order:
