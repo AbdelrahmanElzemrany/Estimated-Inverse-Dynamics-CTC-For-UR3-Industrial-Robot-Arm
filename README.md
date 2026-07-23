@@ -49,6 +49,9 @@ The controller calculates real-time actuator torques ($\tau$) by balancing the i
 
 $$\tau = M(q)\left[\ddot{q}_d + K_p e + K_d \dot{e}\right] + C(q, \dot{q})\dot{q} + G(q) + F(\dot{q})$$
 
+<img width="1558" height="724" alt="Screenshot 2026-07-23 030937" src="https://github.com/user-attachments/assets/17d2c9c7-2369-4d90-be4d-6a26b23b0a1a" />
+
+
 Where:
 * $M(q)$ is the identified bounded Mass/Inertia matrix.
 * $C(q, \dot{q})$ captures Coriolis and centrifugal effects.
