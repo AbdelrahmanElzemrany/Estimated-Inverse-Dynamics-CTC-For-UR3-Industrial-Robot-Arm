@@ -75,11 +75,13 @@ Once the identified base parameters successfully pass the cross-validation tests
 | **5** | `0.2` | `0.15` |
 | **6** | `0.1` | `0.1` |
 
-----------------------------
+---------------------------
+
+## 🖼️ System Visualizations & Simulation Plots-
 
 <img width="1870" height="714" alt="Screenshot 2026-07-23 033347" src="https://github.com/user-attachments/assets/1b6e01e1-6cc7-427d-a03b-7e15acbacea2" />
 
-
+Figure 1 : The UR3 simscape model .
 
 ---------------------------
 
@@ -87,69 +89,82 @@ Once the identified base parameters successfully pass the cross-validation tests
 
 <img width="1515" height="607" alt="image" src="https://github.com/user-attachments/assets/61e3e85d-8d31-40ee-9e19-22a177f40de6" />
 
+
+Figure 2 : The friction model add at each joint to provide additional nonlinearity .
+
 ---------------------------
 
 
 <img width="1917" height="928" alt="image" src="https://github.com/user-attachments/assets/54139ecc-4b26-4ee7-859c-9a8b2a110b07" />
 
 
+Figure 3 : The optimized excitation trajectory to ensure all the base parameters to be estimated excited also to get a low condition number of the regressor matrix to get the correct results .
+
 -------------------------
 
 <img width="1310" height="610" alt="Screenshot 2026-07-23 032555" src="https://github.com/user-attachments/assets/dd420071-2525-46b6-b801-e8726b61c152" />
 
-
+Figrue 4 : The excitation experiment configuration .
 
 ---------------------------
 
 
 <img width="1280" height="704" alt="Step_3_UR3_Excitation-ezgif com-video-to-gif-converter (1)" src="https://github.com/user-attachments/assets/18539516-4ab4-4b46-a8c2-eef4200effdb" />
 
-
+Figure 5 : The UR3 robot arm is moving according to the excitation trajectory .
 
 ---------------------------
 
 <img width="1907" height="915" alt="Screenshot 2026-07-23 032705" src="https://github.com/user-attachments/assets/68118c59-e55a-452a-8552-e88b985b4199" />
 
+Figure 6 : The first cross validation plot against slow validation trajectory .
 
 ----------------------------
 
 
 <img width="1907" height="912" alt="Screenshot 2026-07-23 032935" src="https://github.com/user-attachments/assets/f9b13b93-96d8-4bb9-9d16-72a74bb9167e" />
 
+Figure 7 : The second cross validation plot against aggressive fast trajectory .
 
 ---------------------------
 
 <img width="1328" height="666" alt="image" src="https://github.com/user-attachments/assets/9ae9f663-1323-4db1-afe9-da0c105cae3d" />
 
 
-
+Figure 8 : The Model-Based computed torque controller (CTC) surface level .
 
 ---------------------------
 
 <img width="1552" height="697" alt="Screenshot 2026-07-23 033630" src="https://github.com/user-attachments/assets/8434464a-c31f-41d9-9113-4dd02d5cad5f" />
 
+Figure 9 : THe computed torque controller configuration with S-functions estimated inverse dynamics matrices . 
 
 -----------
 
 <img width="1280" height="704" alt="Step_10_UR3_CTC_SF-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/3f375495-d4c9-4014-a7cc-05732262f748" />
 
-----------
+Figure 10 : Testing the overall system against different trajectories .
 
+
+----------
 
 <img width="1915" height="917" alt="image" src="https://github.com/user-attachments/assets/2e3e14d0-ea9e-460b-a395-b047445eb40c" />
 
 
+Figure 11 : The desired joint position commands and the tracking error of the joints plot .
 
 --------------
 
 <img width="1280" height="704" alt="Step_10_UR3_CTC_SF-ezgif com-video-to-gif-converter (1)" src="https://github.com/user-attachments/assets/b0306cd7-b487-4f8a-a17d-0c44d246d0d9" />
 
+Figure 12 : Testing the robustness of the system and the stablity of it joints .
 
 ---------------
 
 
 <img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/6f2a72b1-8b54-45e5-8082-b6c8c3f872a6" />
 
+Figure 13 : The tracking error across all the joints remains low 
 
 --------------
 
