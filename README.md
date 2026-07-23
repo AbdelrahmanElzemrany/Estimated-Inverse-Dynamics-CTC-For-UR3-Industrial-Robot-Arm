@@ -37,6 +37,21 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 
 -----------------------------------
 
+
+
+### Joint Friction Parameters
+
+| Joint ($i$) | Viscous Friction Coefficient ($F_v$) | Coulomb Friction Coefficient ($F_c$) |
+| :---: | :---: | :---: |
+| **1** | `1.2` | `0.8` |
+| **2** | `1.2` | `0.8` |
+| **3** | `1.2` | `0.8` |
+| **4** | `0.2` | `0.2` |
+| **5** | `0.2` | `0.15` |
+| **6** | `0.1` | `0.1` |
+
+----------------------------
+
 <img width="1870" height="714" alt="Screenshot 2026-07-23 033347" src="https://github.com/user-attachments/assets/1b6e01e1-6cc7-427d-a03b-7e15acbacea2" />
 
 
