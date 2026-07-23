@@ -69,6 +69,18 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 
 -----------
 
+<img width="1280" height="704" alt="Step_10_UR3_CTC_SF-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/3f375495-d4c9-4014-a7cc-05732262f748" />
+
+----------
+
+
+<img width="1915" height="917" alt="image" src="https://github.com/user-attachments/assets/2e3e14d0-ea9e-460b-a395-b047445eb40c" />
+
+
+
+--------------
+
+
 ## 🛠 File Architecture & Workflow Pipeline
 
 To run this project successfully, execute the scripts and Simulink files in the following sequential order:
@@ -114,7 +126,7 @@ Where:
 ## 💻 Requirements & Setup
 
 1. Clone this repository to your local directory.
-2. Open **MATLAB (R2021a or newer recommended)**.
+2. The work is done in **MATLAB (R2020a ).
 3. Ensure the following toolboxes are installed:
    * Simulink
    * Simscape / Simscape Multibody
