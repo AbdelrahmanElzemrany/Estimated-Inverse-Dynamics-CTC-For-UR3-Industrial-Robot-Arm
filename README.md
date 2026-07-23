@@ -57,7 +57,7 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 
 ---------------------------
 
-<img width="1617" height="676" alt="Screenshot 2026-07-23 033551" src="https://github.com/user-attachments/assets/bc8e6144-870a-4ba1-a6ae-e19eb36f494d" />
+<img width="1328" height="666" alt="image" src="https://github.com/user-attachments/assets/9ae9f663-1323-4db1-afe9-da0c105cae3d" />
 
 
 
@@ -90,6 +90,9 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 
 
 --------------
+
+
+
 
 
 ## 🛠 File Architecture & Workflow Pipeline
