@@ -8,6 +8,10 @@ An end-to-end parameter estimation and feedback linearization framework for a 6-
 
 Model-free control strategies (like independent joint PD loops) experience high tracking errors when handling dynamic loads and gravitational forces. Model-based control architectures resolve this by calculating the required dynamic torques on the fly to cancel out the robot's physical properties. 
 
+
+
+
+
 This repository provides a step-by-step pipeline to handle the entire control loop lifecycle: from trajectory excitation and physical parameter estimation to closed-loop validation and computed torque implementation.
 
 ### Key Features
@@ -17,6 +21,19 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 * **Feedback Linearization:** Decouples and linearizes the highly coupled multi-variable 6-DOF system.
 
 ---
+
+### Denavit-Hartenberg (DH) Parameters
+
+| Link ($i$) | $\theta_i$ (Joint Angle) | $\alpha_i$ (Link Twist) | $a_i$ (Link Length) | $d_i$ (Link Offset) |
+| :---: | :---: | :---: | :---: | :---: |
+| **1** | $q_1$ | $0$ | $0$ | $0.15190$ |
+| **2** | $q_2$ | $\pi/2$ | $0$ | $0$ |
+| **3** | $q_3$ | $0$ | $0.24365$ | $0$ |
+| **4** | $q_4$ | $0$ | $0.21325$ | $0.11235$ |
+| **5** | $q_5$ | $\pi/2$ | $0$ | $0.08535$ |
+| **6** | $q_6$ | $-\pi/2$ | $0$ | $0.0819$ |
+
+-----------------------------------
 
 <img width="1870" height="714" alt="Screenshot 2026-07-23 033347" src="https://github.com/user-attachments/assets/1b6e01e1-6cc7-427d-a03b-7e15acbacea2" />
 
