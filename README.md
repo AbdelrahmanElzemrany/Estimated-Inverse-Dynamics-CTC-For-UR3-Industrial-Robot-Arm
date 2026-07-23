@@ -29,7 +29,7 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 
 ----------
 
-<img width="1375" height="541" alt="Screenshot 2026-07-23 033452" src="https://github.com/user-attachments/assets/e696edae-6d89-4655-b159-afbd38344ee1" />
+<img width="1515" height="607" alt="image" src="https://github.com/user-attachments/assets/61e3e85d-8d31-40ee-9e19-22a177f40de6" />
 
 ---------------------------
 
