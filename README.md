@@ -24,14 +24,16 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 
 ### Denavit-Hartenberg (DH) Parameters
 
-| Link ($i$) | $\theta_i$ (Joint Angle) | $\alpha_i$ (Link Twist) | $a_i$ (Link Length) | $d_i$ (Link Offset) |
+                 ### Modified Denavit-Hartenberg (MDH) Parameters
+
+| Link ($i$) | $\alpha_{i-1}$ (Link Twist) | $a_{i-1}$ (Link Length) | $d_i$ (Link Offset) | $\theta_i$ (Joint Angle) |
 | :---: | :---: | :---: | :---: | :---: |
-| **1** | $q_1$ | $0$ | $0$ | $0.15190$ |
-| **2** | $q_2$ | $\pi/2$ | $0$ | $0$ |
-| **3** | $q_3$ | $0$ | $0.24365$ | $0$ |
-| **4** | $q_4$ | $0$ | $0.21325$ | $0.11235$ |
-| **5** | $q_5$ | $\pi/2$ | $0$ | $0.08535$ |
-| **6** | $q_6$ | $-\pi/2$ | $0$ | $0.0819$ |
+| **1** | $0$ | $0$ | $0.15190$ | $q_1$ |
+| **2** | $\pi/2$ | $0$ | $0$ | $q_2$ |
+| **3** | $0$ | $0.24365$ | $0$ | $q_3$ |
+| **4** | $0$ | $0.21325$ | $0.11235$ | $q_4$ |
+| **5** | $\pi/2$ | $0$ | $0.08535$ | $q_5$ |
+| **6** | $-\pi/2$ | $0$ | $0.0819$ | $q_6$ |
 
 -----------------------------------
 
