@@ -19,6 +19,12 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 ---
 ---------------------------
 
+<img width="1310" height="610" alt="Screenshot 2026-07-23 032555" src="https://github.com/user-attachments/assets/dd420071-2525-46b6-b801-e8726b61c152" />
+
+
+
+---------------------------
+
 
 <img width="1280" height="704" alt="Step_3_UR3_Excitation-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/5c831a5e-3d07-4cc3-821f-abdc7c86dcf0" />
 
