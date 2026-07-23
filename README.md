@@ -239,6 +239,23 @@ Figure 14 : Testing the performance of the wrist joints
 
 Figure 15 : The tracking error across the joints remains low but it also show why the sixith joint got the least validation percentage 
 
+------------------------
+
+<img width="1280" height="704" alt="Step_10_UR3_CTC_SF-ezgif com-video-to-gif-converter (3)" src="https://github.com/user-attachments/assets/182aa971-a6bc-452b-a935-2ad12b29aed8" />
+
+
+Figure 16 : Testing the all joints with sinesudal agressive trejactory 
+
+
+
+----------------------
+
+
+<img width="1532" height="868" alt="image" src="https://github.com/user-attachments/assets/8572a7b8-4c2e-46b5-b527-73c6980f5eb4" />
+
+Figure 17 : The tracking error across the joints remains very low and converges to zero but the wrist joints get a decrease in performance
+
+
 
 
 
