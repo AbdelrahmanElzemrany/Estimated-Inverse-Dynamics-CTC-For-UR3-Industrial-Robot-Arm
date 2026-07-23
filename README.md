@@ -36,6 +36,16 @@ To guarantee that the identified base parameters are correct, robust, and free f
 * **Torque Tracking Residuals:** The actual joint torques logged from the Simscape plant are directly compared against the predicted torques computed by the estimated parameter matrix.
 * **Accuracy Confirmation:** A low residual error across both independent test sets mathematically verifies that the identified minimal parameter set accurately captures the true structural dynamics of the physical arm under any motion profile.
 
+### 🛠️ Controller Reconstruction & Deployment
+Once the identified base parameters successfully pass the cross-validation tests, they are finalized and injected into the dynamic framework:
+* **Matrix Reformulation:** The validated minimal parameter set is used to reconstruct the high-fidelity estimated inverse dynamics matrices: the Mass/Inertia matrix $\hat{M}(q)$, the Coriolis/Centrifugal matrix $\hat{C}(q, \dot{q})$, and the Gravity vector $\hat{G}(q)$.
+* **Model-Based CTC Design:** These reconstructed matrices act as the core mathematical engine for the model-based **Computed Torque Controller (CTC)**. By executing feedback linearization in real-time, the controller cancels out the non-linear multibody dynamics, leaving decoupled linear joint loops that achieve exceptional path-tracking accuracy.
+
+> [!NOTE]
+> ### 🔩 Friction Integration into the Coriolis Matrix
+> For structural and implementation elegance within the real-time control loop, the estimated joint friction models ($F_v$ and $F_c$) are mathematically grouped and embedded directly into the **Coriolis/Centrifugal matrix** $\hat{C}(q, \dot{q})$. This consolidates all velocity-dependent dynamic losses into a unified matrix expression, optimizing real-time calculation efficiency in the controller.
+
+
 
 ### Denavit-Hartenberg (DH) Parameters (Modified)
 
