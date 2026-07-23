@@ -22,9 +22,9 @@ This repository provides a step-by-step pipeline to handle the entire control lo
 
 ---
 
-### Denavit-Hartenberg (DH) Parameters
+### Denavit-Hartenberg (DH) Parameters (Modified)
 
-                 ### Modified Denavit-Hartenberg (MDH) Parameters
+           
 
 | Link ($i$) | $\alpha_{i-1}$ (Link Twist) | $a_{i-1}$ (Link Length) | $d_i$ (Link Offset) | $\theta_i$ (Joint Angle) |
 | :---: | :---: | :---: | :---: | :---: |
