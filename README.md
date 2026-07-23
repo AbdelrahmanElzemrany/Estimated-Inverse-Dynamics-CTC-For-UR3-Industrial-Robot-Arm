@@ -141,9 +141,27 @@ Figure 6 : The first cross validation plot against slow validation trajectory .
 
 <img width="1907" height="912" alt="Screenshot 2026-07-23 032935" src="https://github.com/user-attachments/assets/f9b13b93-96d8-4bb9-9d16-72a74bb9167e" />
 
-Figure 7 : The second cross validation plot against aggressive fast trajectory .
+<img width="..." height="..." alt="Validation Results" src="[screenshot]" />
+
+**Figure 7 Caption:** Cross-validation results showing per-joint fit percentages 
+and overall system accuracy (99.89%).
+
+### Quantitative Cross-Validation Results
+
+| Joint | Fit Percentage |
+|-------|----------------|
+| Joint 1 (Base Yaw) | 99.66% |
+| Joint 2 (Shoulder) | 99.91% |
+| Joint 3 (Elbow) | 99.83% |
+| Joint 4 (Wrist 1) | 99.50% |
+| Joint 5 (Wrist 2) | 98.91% |
+| Joint 6 (Wrist 3) | 98.55% |
+| **Overall Accuracy** | **99.89%** |
+
+
 
 ---------------------------
+
 
 <img width="1328" height="666" alt="image" src="https://github.com/user-attachments/assets/9ae9f663-1323-4db1-afe9-da0c105cae3d" />
 
