@@ -107,7 +107,7 @@ Figure 1 : The UR3 simscape model .
 <img width="1515" height="607" alt="image" src="https://github.com/user-attachments/assets/61e3e85d-8d31-40ee-9e19-22a177f40de6" />
 
 
-Figure 2 : The friction model add at each joint to provide additional nonlinearity .
+Figure 2 : the modeled friction torque in each joint configuration .
 
 ---------------------------
 
@@ -115,7 +115,7 @@ Figure 2 : The friction model add at each joint to provide additional nonlineari
 <img width="1917" height="928" alt="image" src="https://github.com/user-attachments/assets/54139ecc-4b26-4ee7-859c-9a8b2a110b07" />
 
 
-Figure 3 : The optimized excitation trajectory to ensure all the base parameters to be estimated excited also to get a low condition number of the regressor matrix to get the correct results .
+Figure 3 : The optimized excitation trajectory to ensure all the base parameters to be estimated are well-excited as we seek to get a low condition number of the regressor matrix to get the correct results .
 
 -------------------------
 
@@ -128,13 +128,13 @@ Figrue 4 : The excitation experiment configuration .
 
 <img width="1280" height="704" alt="Step_3_UR3_Excitation-ezgif com-video-to-gif-converter (1)" src="https://github.com/user-attachments/assets/18539516-4ab4-4b46-a8c2-eef4200effdb" />
 
-Figure 5 : The UR3 robot arm is moving according to the excitation trajectory .
+Figure 5 : A visualisation of the excitation step.
 
 ---------------------------
 <img width="1917" height="928" alt="image" src="https://github.com/user-attachments/assets/92cce9d8-f4cb-4de7-ac49-476b09f116ad" />
 
 
-Figure 6 : The first cross validation plot against slow validation trajectory .
+Figure 6 : The first cross validation plot against a slow validation trajectory .
 
 ----------------------------
 
@@ -201,7 +201,7 @@ Figure 9 : The computed torque controller configuration with S-functions estimat
 
 <img width="1280" height="704" alt="Step_10_UR3_CTC_SF-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/3f375495-d4c9-4014-a7cc-05732262f748" />
 
-Figure 10 : Testing the overall system against different trajectories .
+Figure 10 : Testing the overall system performance in different scenarios .
 
 
 ----------
@@ -209,20 +209,20 @@ Figure 10 : Testing the overall system against different trajectories .
 <img width="1915" height="917" alt="image" src="https://github.com/user-attachments/assets/2e3e14d0-ea9e-460b-a395-b047445eb40c" />
 
 
-Figure 11 : The desired joint position commands and the tracking error of the joints plot .
+Figure 11 : The desired joint position commands and the tracking error of the joints  .
 
 --------------
 
 <img width="1280" height="704" alt="Step_10_UR3_CTC_SF-ezgif com-video-to-gif-converter (1)" src="https://github.com/user-attachments/assets/b0306cd7-b487-4f8a-a17d-0c44d246d0d9" />
 
-Figure 12 : Testing the robustness of the system and the stablity of it joints .
+Figure 12 : Testing the robustness of the system and the stablity of its joints .
 
 ---------------
 
 
 <img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/6f2a72b1-8b54-45e5-8082-b6c8c3f872a6" />
 
-Figure 13 : The tracking error across all the joints remains low 
+Figure 13 : The tracking error across all the joints. 
 
 --------------
 
@@ -244,7 +244,7 @@ Figure 15 : The tracking error across the joints remains low but it also show wh
 <img width="1280" height="704" alt="Step_10_UR3_CTC_SF-ezgif com-video-to-gif-converter (3)" src="https://github.com/user-attachments/assets/182aa971-a6bc-452b-a935-2ad12b29aed8" />
 
 
-Figure 16 : Testing the all joints with sinesudal agressive trejactory 
+Figure 16 : Testing the all joints with sin wave aggressive trejactory 
 
 
 
@@ -253,7 +253,7 @@ Figure 16 : Testing the all joints with sinesudal agressive trejactory
 
 <img width="1532" height="868" alt="image" src="https://github.com/user-attachments/assets/8572a7b8-4c2e-46b5-b527-73c6980f5eb4" />
 
-Figure 17 : The tracking error across the joints remains very low and converges to zero but the wrist joints get a decrease in performance
+Figure 17 : The tracking error across the joints remains very low and converges to zero but the wrist joints get a decrease in performance.
 
 
 
@@ -287,13 +287,3 @@ To run this project successfully, execute the scripts and Simulink files in the 
 
 
 
-## 💻 Requirements & Setup
-
-1. Clone this repository to your local directory.
-2. The work is done in **MATLAB (R2020a ).
-3. Ensure the following toolboxes are installed:
-   * Simulink
-   * Simscape / Simscape Multibody
-   * Optimization Toolbox
-   * Robotic Systems Toolbox
-4. Add the root repository folder and its assets to your MATLAB path.
