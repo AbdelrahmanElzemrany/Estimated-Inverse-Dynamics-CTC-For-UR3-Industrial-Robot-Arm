@@ -195,7 +195,7 @@ Figure 8 : The Model-Based computed torque controller (CTC) surface level .
 
 <img width="1552" height="697" alt="Screenshot 2026-07-23 033630" src="https://github.com/user-attachments/assets/8434464a-c31f-41d9-9113-4dd02d5cad5f" />
 
-Figure 9 : THe computed torque controller configuration with S-functions estimated inverse dynamics matrices . 
+Figure 9 : The computed torque controller configuration with S-functions estimated inverse dynamics matrices . 
 
 -----------
 
